@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 // react icons
@@ -61,7 +62,7 @@ export default function Hero() {
           </div>
 
           <div className="w-full sm:w-[50%]">
-            <img src="/banner-bg.png" alt="image" className="w-full h-full" />
+            <Image src="/banner-bg.png" alt="image" className="w-full h-full" />
           </div>
         </header>
       </div>

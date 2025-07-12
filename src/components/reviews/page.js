@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/carousel";
 import { FaQuoteLeft, FaStar } from "react-icons/fa";
 import Autoplay from "embla-carousel-autoplay";
+import Image from "next/image";
 
 export default function Reviews() {
   const reviews = [
@@ -105,7 +106,7 @@ export default function Reviews() {
               <div className="bg-white border border-gray-200 rounded-md shadow-md hover:shadow-lg transition-shadow duration-300 p-10 h-full">
                 <div className="flex justify-center mb-4">
                   <div className="relative">
-                    <img
+                    <Image
                       src={review.avatar}
                       alt={review.name}
                       className="w-12 h-12 rounded-full object-cover border-2 border-indigo-100"
