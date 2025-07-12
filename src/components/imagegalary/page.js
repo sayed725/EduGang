@@ -1,6 +1,5 @@
 "use client";
 
-
 import { motion } from "framer-motion";
 import Image from "next/image";
 
@@ -25,21 +24,25 @@ export default function ImageGallery() {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.8 }}
       viewport={{ once: true }}
-      className="py-20 w-11-12 mx-auto bg-gradient-to-r from-[#fbfbfc] to-[#f7f7f7]"
+      className="w-11/12 mx-auto mb-10"
     >
       <div className="max-w-7xl  mx-auto">
         {/* Header */}
-        <div className="text-center mb-10">
+        <div className="text-center mb-8 ">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-          
-           <h2 className='text-black text-5xl text-center py-10  font-semibold'>Explore Our <span className='text-[#0f82fc]'>College Gallery</span></h2>
-           
-          
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
+              Explore Our{" "}
+              <span className="text-[#0f82fc]">College Gallery</span>
+            </h2>
+            <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+              Explore cutting-edge research from leading institutions across
+              various fields.
+            </p>
           </motion.div>
         </div>
 
