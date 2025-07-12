@@ -1,5 +1,6 @@
 import College from "@/components/college/college"
 import Hero from "@/components/hero/hero"
+import ImageGallery from "@/components/imagegalary/page"
 import { Button } from "@/components/ui/button"
  
 export default function Home() {
@@ -8,8 +9,15 @@ export default function Home() {
      <div>
       <Hero/>
      </div>
+
+
      <div>
       <College/>
+     </div>
+
+
+     <div>
+      <ImageGallery/>
      </div>
     </div>
   )
