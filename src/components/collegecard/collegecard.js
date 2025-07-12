@@ -10,9 +10,9 @@ export default function CollegeCard({ college }) {
   const [showDetails, setShowDetails] = useState(false);
 
   return (
-    <div className=" w-full mx-auto bg-white rounded-xl shadow-lg overflow-hidden">
+    <div className=" w-full mx-auto bg-white rounded-xl shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300">
       <div className="relative">
-        <img src={college.image} alt={college.name} className="w-full h-64 object-cover bg-gray-600 opacity-50" />
+        <img src={college.image} alt={college.name} className="w-full h-64 object-cover bg-gray-600 opacity-50 " />
        
         <div className="absolute top-2 right-2 bg-yellow-300 text-gray-800 text-sm font-bold px-2 py-1 rounded flex items-center">
           <FaStar className="mr-1" /> {college.rating}

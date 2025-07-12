@@ -124,7 +124,7 @@ export default function College  ()  {
       "sports": [
         "Table Tennis",
         "Baseball",
-        "Synchronized Swimming"
+        "Swimming"
       ]
     }
   },
@@ -253,7 +253,7 @@ export default function College  ()  {
  <div className='w-11/12 mx-auto mb-10'>
 
     <div>
-        <h2 className='text-black text-5xl text-center py-10 tracking-wider font-semibold'>Explore Our Latest <span className='text-[#0f82fc]'>Colleges</span></h2>
+        <h2 className='text-black text-5xl text-center py-10  font-semibold'>Our Top <span className='text-[#0f82fc]'>College & University</span></h2>
     </div>
 
 
