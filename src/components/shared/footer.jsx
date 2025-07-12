@@ -9,7 +9,7 @@ export default function Footer() {
   return (
     <footer className="py-5 bg-[#212229] text-white">
      
-      <div className="w-11/12 mx-auto z-10">
+      <div className="z-10 max-w-7xl mx-auto">
         {/* Footer content */}
         <div className="py-10 lg:py-20">
           <div className="flex justify-center sm:justify-between gap-[30px] flex-wrap w-full">

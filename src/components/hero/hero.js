@@ -6,7 +6,7 @@ import { FaCircleCheck } from "react-icons/fa6";
 
 export default function Hero() {
   return (
-    <div className="h-full bg-[#f2f3fc] rounded-md w-11/12 mx-auto">
+    <div className="h-full bg-[#f2f3fc] rounded-md w-11/12 mx-auto mb-10">
       <div className="max-w-7xl mx-auto py-5 lg:py-14">
         {/* header */}
         <header className="flex lg:flex-row flex-col gap-[50px]  lg:gap-10 items-center">

@@ -56,7 +56,7 @@ export default function Navbar() {
               Home
             </Link>
             <Link
-              href="/college"
+              href="/colleges"
               className="text-gray-700 hover:text-[#0f82fc] transition capitalize relative before:w-0 hover:before:w-full before:bg-[#0f82fc] before:h-[2px] before:transition-all before:duration-300 before:absolute before:rounded-full before:bottom-[-2px] before:left-0"
             >
               Colleges
@@ -195,7 +195,7 @@ export default function Navbar() {
                     Home
                   </Link>
                   <Link
-                    href="/college"
+                    href="/colleges"
                     className="text-lg hover:text-[#0f82fc] transition capitalize"
                     onClick={() => setIsOpen(false)}
                   >
