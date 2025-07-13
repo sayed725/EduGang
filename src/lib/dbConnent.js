@@ -5,4 +5,4 @@ export const dbConnect = async (collectionName) => {
   return client.db("edugang_DB").collection(collectionName);
 };
 
-export const collections = { admissions: "admissions" };
+export const collections = { admissions: "admissions", reviews: "reviews" };
