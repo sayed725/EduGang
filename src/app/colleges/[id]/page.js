@@ -33,6 +33,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import PageHeader from "@/components/shared/pageheader";
 
 const colleges = [
   {
@@ -349,7 +350,7 @@ export default async function Details({ params }) {
             <CardTitle className="text-2xl font-bold text-gray-800">College Not Found</CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-gray-600">Sorry, we couldn't find a college with ID {id}.</p>
+            <p className="text-gray-600">Sorry, we couldnot find a college with ID {id}.</p>
           </CardContent>
         </Card>
       </div>
@@ -358,6 +359,11 @@ export default async function Details({ params }) {
 
   return (
     <div className="min-h-screen w-11/12 mx-auto bg-[#f5f5f5] py-5">
+
+        <PageHeader title="College Details"/>
+
+
+
       <div className="max-w-7xl mx-auto py-6">
         <div className="space-y-6">
           {/* Hero Section */}
