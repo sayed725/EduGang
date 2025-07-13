@@ -5,6 +5,7 @@ import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
 import Navbar from "@/components/shared/navbar";
 import Footer from "@/components/shared/footer";
+import { Toaster } from "sonner";
 
 
 const geistSans = Geist({
@@ -27,6 +28,7 @@ export default function RootLayout({ children }) {
     <ClerkProvider>
       <html lang="en">
         <body className="bg-gray-100">
+          <Toaster position="bottom-right" />
           <Navbar />
           <main className="">{children}</main>
           <Footer />
