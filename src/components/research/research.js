@@ -46,7 +46,8 @@ const researchPapers = [
 
 export default function Research() {
   return (
-    <section className="w-full max-w-7xl mx-auto  mb-10">
+  <div className="w-11/12 mx-auto">
+      <section className="max-w-7xl mx-auto  mb-10">
       {/* Header */}
       <div className="text-center mb-8">
         <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
@@ -97,5 +98,6 @@ export default function Research() {
         ))}
       </div>
     </section>
+  </div>
   );
 }

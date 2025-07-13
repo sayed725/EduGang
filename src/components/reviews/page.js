@@ -109,6 +109,8 @@ export default function Reviews() {
                     <Image
                       src={review.avatar}
                       alt={review.name}
+                      width={12}
+                      height={12}
                       className="w-12 h-12 rounded-full object-cover border-2 border-indigo-100"
                     />
                     <span className="absolute -top-2 -right-2 w-6 h-6 bg-[#0f82fc] text-white rounded-full flex items-center justify-center text-xs">

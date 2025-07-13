@@ -9,7 +9,7 @@ export default function College() {
     {
       id: 1,
       name: "Stellar University",
-      image: "https://via.placeholder.com/300x200?text=Stellar+University",
+      image: "/random-college1.jpg",
       rating: 4.7,
       admissionDate: "June 1 - July 31",
       researchCount: 120,
@@ -25,7 +25,7 @@ export default function College() {
     {
       id: 2,
       name: "Horizon College",
-      image: "https://via.placeholder.com/300x200?text=Horizon+College",
+      image: "/random-college2.jpg",
       rating: 4.5,
       admissionDate: "June 1 - July 31",
       researchCount: 95,
@@ -41,7 +41,7 @@ export default function College() {
     {
       id: 3,
       name: "Luminous Institute",
-      image: "https://via.placeholder.com/300x200?text=Luminous+Institute",
+      image: "/random-college3.jpg",
       rating: 4.8,
       admissionDate: "August 1 - September 30",
       researchCount: 150,
@@ -57,7 +57,7 @@ export default function College() {
     {
       id: 4,
       name: "Aurora Academy",
-      image: "https://via.placeholder.com/300x200?text=Aurora+Academy",
+      image: "/random-college4.jpg",
       rating: 4.6,
       admissionDate: "January 1 - January 31",
       researchCount: 80,
@@ -73,7 +73,7 @@ export default function College() {
     {
       id: 5,
       name: "Celestial College",
-      image: "https://via.placeholder.com/300x200?text=Celestial+College",
+      image: "/random-college5.jpeg",
       rating: 4.9,
       admissionDate: "June 1 - July 31",
       researchCount: 200,
@@ -89,7 +89,7 @@ export default function College() {
     {
       id: 6,
       name: "Nebula University",
-      image: "https://via.placeholder.com/300x200?text=Nebula+University",
+      image: "/random-college6.avif",
       rating: 4.4,
       admissionDate: "June 1 - July 31",
       researchCount: 110,
@@ -105,7 +105,7 @@ export default function College() {
     {
       id: 7,
       name: "Eclipse Academy",
-      image: "https://via.placeholder.com/300x200?text=Eclipse+Academy",
+      image: "/random-college1.jpg",
       rating: 4.3,
       admissionDate: "February 1 - February 28",
       researchCount: 90,
@@ -121,7 +121,7 @@ export default function College() {
     {
       id: 8,
       name: "Radiant Institute",
-      image: "https://via.placeholder.com/300x200?text=Radiant+Institute",
+      image: "/random-college2.jpg",
       rating: 4.6,
       admissionDate: "March 1 - March 31",
       researchCount: 130,
@@ -137,7 +137,7 @@ export default function College() {
     {
       id: 9,
       name: "Nova College",
-      image: "https://via.placeholder.com/300x200?text=Nova+College",
+      image: "/random-college3.jpg",
       rating: 4.7,
       admissionDate: "April 1 - April 30",
       researchCount: 160,
@@ -153,7 +153,7 @@ export default function College() {
     {
       id: 10,
       name: "Pinnacle University",
-      image: "https://via.placeholder.com/300x200?text=Pinnacle+University",
+      image: "/random-college4.jpg",
       rating: 4.8,
       admissionDate: "May 1 - May 31",
       researchCount: 140,
@@ -169,7 +169,7 @@ export default function College() {
     {
       id: 11,
       name: "Zenith Academy",
-      image: "https://via.placeholder.com/300x200?text=Zenith+Academy",
+      image: "/random-college5.jpeg",
       rating: 4.5,
       admissionDate: "July 1 - July 31",
       researchCount: 100,
@@ -185,7 +185,7 @@ export default function College() {
     {
       id: 12,
       name: "Cosmic Institute",
-      image: "https://via.placeholder.com/300x200?text=Cosmic+Institute",
+      image: "/random-college6.avif",
       rating: 4.6,
       admissionDate: "August 1 - September 30",
       researchCount: 170,

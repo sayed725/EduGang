@@ -62,7 +62,7 @@ export default function Hero() {
           </div>
 
           <div className="w-full sm:w-[50%]">
-            <Image src="/banner-bg.png" alt="image" className="w-full h-full" />
+            <Image src="/banner-bg.png" alt="image" width="610" height="600" className="w-full h-full" />
           </div>
         </header>
       </div>
