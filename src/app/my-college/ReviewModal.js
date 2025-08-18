@@ -1,9 +1,10 @@
 "use client";
 
-import { StarIcon } from "lucide-react";
+import { StarIcon, X } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
 import { addReview } from "../actions/addReview";
+import { Button } from "@/components/ui/button";
 
 export default function ReviewModal({
   admissionId,
@@ -59,28 +60,42 @@ export default function ReviewModal({
   return (
     <>
       {/* Trigger Button */}
-      <button
+      <Button
         onClick={() => setIsOpen(true)}
         className="mx-auto block w-3/5 bg-[#0f82fc] hover:bg-[#0b6cd6] text-white font-medium py-2 rounded-md transition-transform duration-300 hover:scale-105"
       >
         Add Review
-      </button>
+      </Button>
 
       {/* Dialog Overlay and Content */}
       {isOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50">
-          <div className="bg-white dark:bg-gray-800 rounded-lg shadow-xl  max-w-[425px] mx-4">
+          <div className="bg-white dark:bg-gray-800 rounded-lg shadow-xl py-5  max-w-[425px] mx-4">
+
+           <div className="flex justify-between items-center px-6 pt-6">
+
             {/* Dialog Header */}
-            <div className="px-6 pt-6">
+            <div className="pt-6">
               <h2 className="text-base font-semibold text-gray-900 dark:text-white">
                 Add Your Review
               </h2>
             </div>
+              {/* CLOSE BUTTON */}
+            <button
+              className="top-0 text-gray-900 hover:text-gray-800"
+              onClick={() => setIsOpen(false)}
+            >
+              <X className="w-5 h-5" />
+              <span className="sr-only">Close</span>
+            </button>
+           </div>
+
+            
 
             {/* Dialog Content */}
             <form
               onSubmit={handleSubmit}
-              className="border-t border-gray-200 dark:border-gray-700 -mt-2 pt-4 px-6 pb-6 space-y-4"
+              className="-mt-2 pt-4 px-6 pb-6 space-y-4"
             >
               {/* Rating Section */}
               <div>
@@ -121,17 +136,17 @@ export default function ReviewModal({
               </div>
 
               {/* Submit Button */}
-              <button
+              <Button
                 type="submit"
                 disabled={isSubmitting || !rating || !review}
-                className={`w-full py-2 px-4 rounded-md text-sm font-medium text-black ${
+                className={`w-full py-2 px-4 rounded-md text-sm font-medium text-white ${
                   isSubmitting || !rating || !review
-                    ? "bg-gray-400 cursor-not-allowed"
+                    ? "bg-[#0f82fc] cursor-not-allowed"
                     : "bg-[#0f82fc] hover:bg-[#0b6cd6]"
                 } transition-colors duration-200`}
               >
                 {isSubmitting ? "Submitting..." : "Submit Review"}
-              </button>
+              </Button>
             </form>
           </div>
         </div>

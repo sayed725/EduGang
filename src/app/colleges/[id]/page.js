@@ -24,7 +24,6 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import { FaSwimmer, FaTableTennis } from "react-icons/fa";
-import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import Image from "next/image";
 import {
   Card,

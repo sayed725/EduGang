@@ -6,6 +6,7 @@ import { useRouter } from "next/navigation";
 
 import { addAdmission } from "../actions/addAddmission";
 import { toast } from "sonner";
+import { Button } from "@/components/ui/button";
 
 export default function AdmissionForm({ college, user }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,16 +31,16 @@ export default function AdmissionForm({ college, user }) {
 
   return (
     <>
-      <button
+      <Button
         onClick={() => setIsOpen(true)}
-        className="mx-auto block w-3/5 bg-[#0f82fc] hover:opacity-80 hover:scale-105 duration-300 text-white font-medium py-2 rounded-md"
+        className="mx-auto bg-[#0f82fc] hover:bg-[#0f82fc] hover:opacity-80 hover:scale-105 duration-300 text-white font-medium py-2 rounded-md"
       >
         Get Admission
-      </button>
+      </Button>
 
       {/* BACKDROP */}
       {isOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50">
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 ">
           {/* DIALOG CONTENT */}
           <div className="bg-white w-[95%] sm:max-w-lg max-h-[90vh] overflow-y-auto rounded-lg border p-6 relative animate-fade-in">
             {/* CLOSE BUTTON */}

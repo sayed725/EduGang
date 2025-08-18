@@ -56,7 +56,7 @@ export default async function MyCollege() {
         {admissions?.map((admission) => (
           <Card
             key={admission?._id}
-            className="mb-8 overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out py-0"
+            className="mb-8 overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out py-0 p-5"
           >
             {/* New Header Section */}
             <div className="p-4 bg-gradient-to-r from-bg-violet to-bg-pink text-black flex flex-col md:flex-row items-center justify-between gap-4">
@@ -70,12 +70,12 @@ export default async function MyCollege() {
                 </Avatar>
                 <div>
                   <h2 className="text-2xl font-bold">{admission?.name}</h2>
-                  <p className="font-medium">{admission?.subject}</p>
+                  <p className="font-medium text-gray-700 text-lg ">{admission?.subject}</p>
                 </div>
               </div>
             </div>
             <CardContent className="px-4">
-              <div className="flex flex-col md:flex-row items-center gap-4">
+              <div className="flex items-center flex-col lg:flex-row gap-4">
                 {/* College Info Card */}
                 <div className="relative h-64 overflow-hidden rounded-xl">
                   <Avatar className="w-full h-full rounded-xl">
@@ -151,11 +151,10 @@ export default async function MyCollege() {
                   </div>
                 </div>
               </div>
-            </CardContent>{" "}
-            <CardFooter className="pb-5 bg-gray-50 border-t border-gray-100 w-full flex justify-between">
+            </CardContent>
+            <CardFooter className="bg-gray-50 w-full flex justify-center items-center">
               {/* Review Button Section */}
-              <div></div>
-              <div className="flex justify-end">
+              <div className="flex justify-center items-center">
                 <ReviewModal
                   admissionId={admission?._id}
                   userName={admission?.name}
