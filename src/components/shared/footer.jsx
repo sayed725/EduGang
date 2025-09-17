@@ -1,7 +1,7 @@
 "use client";
-import { FaEnvelope, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
+import { FaEnvelope, FaEnvelopeOpen, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
+
 import { FaAngleRight, FaChevronUp } from "react-icons/fa6";
 import Link from "next/link";
 
@@ -9,7 +9,8 @@ export default function Footer() {
   return (
     <footer className="py-5 bg-[#212229] text-white">
      
-      <div className="z-10 max-w-7xl mx-auto">
+     <div className="w-11/12 mx-auto">
+       <div className="z-10 max-w-7xl mx-auto">
         {/* Footer content */}
         <div className="py-10 lg:py-20">
           <div className="flex justify-center sm:justify-between gap-[30px] flex-wrap w-full">
@@ -41,12 +42,12 @@ export default function Footer() {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/" className="hover:text-[white]">
+                    <Link href="/colleges" className="hover:text-[white]">
                       Colleges
                     </Link>
                   </li>
                   <li>
-                    <Link href="/" className="hover:text-[white]">
+                    <Link href="/admission" className="hover:text-[white]">
                       Admission
                     </Link>
                   </li>
@@ -83,7 +84,7 @@ export default function Footer() {
                   2nd block, New York City
                 </p>
                 <p className="flex items-center mt-2">
-                  <FaEnvelope className="mr-3 text-[#0f82fc]" />{" "}
+                  <FaEnvelopeOpen className="mr-3 text-[#0f82fc]" />
                   abusayedkhan.pro@gmail.com
                 </p>
                 <p className="flex items-center mt-2">
@@ -102,9 +103,9 @@ export default function Footer() {
       </Link>
 
       {/* Copyright */}
-      <div className="w-11/12 mx-auto">
+      <div className="">
         <div className="flex flex-col lg:flex-row gap-5 lg:gap-0 justify-between items-center max-w-7xl mx-auto text-gray-300">
-          <p>
+          <p className="text-center lg:text-left">
             Copyright @2025, <span className="text-[white]">EduGang</span> All Rights Reserved
           </p>
           <div className="flex space-x-5 text-gray-300 ">
@@ -135,6 +136,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
+     </div>
     </footer>
   );
 }
