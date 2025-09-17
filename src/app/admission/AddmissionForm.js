@@ -33,7 +33,7 @@ export default function AdmissionForm({ college, user }) {
     <>
       <Button
         onClick={() => setIsOpen(true)}
-        className="mx-auto bg-[#0f82fc] hover:bg-[#0f82fc] hover:opacity-80 hover:scale-105 duration-300 text-white font-medium py-2 rounded-md"
+        className="mx-auto flex justify-center items-center bg-[#0f82fc] hover:bg-[#0f82fc] hover:opacity-80 hover:scale-105 duration-300 text-white font-medium py-2 rounded-md"
       >
         Get Admission
       </Button>

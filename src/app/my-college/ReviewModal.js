@@ -62,7 +62,7 @@ export default function ReviewModal({
       {/* Trigger Button */}
       <Button
         onClick={() => setIsOpen(true)}
-        className="mx-auto block w-3/5 bg-[#0f82fc] hover:bg-[#0b6cd6] text-white font-medium py-2 rounded-md transition-transform duration-300 hover:scale-105"
+        className="mx-auto flex justify-center items-center bg-[#0f82fc] hover:bg-[#0f82fc] hover:opacity-80 hover:scale-105 duration-300 text-white font-medium py-2 rounded-md"
       >
         Add Review
       </Button>
@@ -70,12 +70,12 @@ export default function ReviewModal({
       {/* Dialog Overlay and Content */}
       {isOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50">
-          <div className="bg-white dark:bg-gray-800 rounded-lg shadow-xl py-5  max-w-[425px] mx-4">
+          <div className="bg-white dark:bg-gray-800 rounded-lg shadow-xl py-5  mx-4 w-full max-w-md">
 
-           <div className="flex justify-between items-center px-6 pt-6">
+           <div className="flex justify-between items-center px-6">
 
             {/* Dialog Header */}
-            <div className="pt-6">
+            <div className="">
               <h2 className="text-base font-semibold text-gray-900 dark:text-white">
                 Add Your Review
               </h2>
@@ -95,7 +95,7 @@ export default function ReviewModal({
             {/* Dialog Content */}
             <form
               onSubmit={handleSubmit}
-              className="-mt-2 pt-4 px-6 pb-6 space-y-4"
+              className="-mt-2 pt-4 px-6  space-y-4"
             >
               {/* Rating Section */}
               <div>

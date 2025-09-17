@@ -13,7 +13,7 @@ import PageHeader from "@/components/shared/pageheader";
 
 async function getAdmissionData(userId) {
   const admissionCollection = await dbConnect(collections?.admissions);
-  const result = await admissionCollection?.find({ userId }).toArray();
+  const result = await admissionCollection?.find({ userId }).sort({ createdAt: -1 }).toArray();
 
   // Convert raw MongoDB documents to AdmissionData[]
   const mapped = result.map((item) => ({
@@ -52,14 +52,14 @@ export default async function MyCollege() {
 
    <PageHeader title="my college"/>
 
-      <main className="max-w-7xl px-6 mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+      <main className="max-w-7xl w-11/12 mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 my-5">
         {admissions?.map((admission) => (
           <Card
             key={admission?._id}
-            className="mb-8 overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out py-0 p-5"
+            className="mb-8 overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out py-0 p-3"
           >
             {/* New Header Section */}
-            <div className="p-4 bg-gradient-to-r from-bg-violet to-bg-pink text-black flex flex-col md:flex-row items-center justify-between gap-4">
+            <div className="bg-gradient-to-r from-bg-violet to-bg-pink text-black flex flex-col md:flex-row items-center justify-between gap-4">
               <div className="flex items-center gap-4">
                 <Avatar className="w-20 h-20 border-4 border-black shadow-md">
                   <AvatarImage src={admission?.image} alt={admission?.name} />
@@ -74,10 +74,18 @@ export default async function MyCollege() {
                 </div>
               </div>
             </div>
-            <CardContent className="px-4">
+
+             <div className="">
+                    <h3 className="text-2xl text-center font-bold text-black">
+                      {admission.collegeName}
+                    </h3>
+                  </div>
+
+            {/* content  */}
+            <CardContent className="px-0">
               <div className="flex items-center flex-col lg:flex-row gap-4">
                 {/* College Info Card */}
-                <div className="relative h-64 overflow-hidden rounded-xl">
+                <div className="relative h-64 w-full overflow-hidden rounded-xl">
                   <Avatar className="w-full h-full rounded-xl">
                     <AvatarImage
                       src={admission.collegeImage || "/placeholder.svg"}
@@ -89,17 +97,11 @@ export default async function MyCollege() {
                     </AvatarFallback>
                   </Avatar>
 
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent z-10 rounded-xl" />
-
-                  <div className="absolute bottom-2 left-4 right-4 z-20">
-                    <h3 className="text-2xl font-bold text-white mb-2">
-                      {admission.collegeName}
-                    </h3>
-                  </div>
+                  {/* <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent z-10 rounded-xl" /> */}
                 </div>
 
                 {/* Personal Details & Contact Info - Grouped */}
-                <div className="space-y-4 p-4 border border-gray-200 rounded-lg bg-white shadow-sm">
+                <div className="space-y-4 p-4 w-full border border-gray-200 rounded-lg bg-white shadow-sm">
                   <h3 className="text-lg font-semibold text-gray-800 mb-4">
                     Personal & Contact Information
                   </h3>

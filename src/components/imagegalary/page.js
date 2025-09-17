@@ -8,8 +8,8 @@ const galleryImages = [
   "https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
   "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
   "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-  "https://images.unsplash.com/photo-1519452575417-481c0e6bdominik?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-  "https://images.unsplash.com/photo-1523580490139-7c4291e25466?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+  "https://images.unsplash.com/photo-1606761568499-6d2451b23c66?q=80&w=2148&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   "https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
   "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
 ];
